@@ -8,7 +8,7 @@ interface Studio {
     _id: string;
     title: string;
     category: string;
-    image: string; // Database field matches "image"
+    image: string; 
     hourlyRate: number;
     location: string;
     rating?: number;

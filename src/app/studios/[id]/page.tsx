@@ -12,10 +12,10 @@ interface StudioDetailsPageProps {
 export default async function StudioDetailsPage({ params }: StudioDetailsPageProps) {
   const { id } = await params;
 
-  // Server-side JWT Token get kora (Terminal-e log dekhabe)
+
  const token = await gettokenfromserver();
 
-  // Backend theke data fetch kora with Authorization header
+  
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/studios/${id}`, {
     headers: {
       authorization: `Bearer ${token}`,
@@ -33,16 +33,16 @@ export default async function StudioDetailsPage({ params }: StudioDetailsPagePro
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 py-12 px-4 sm:px-6 lg:px-8 font-sans relative">
       <div className="max-w-6xl mx-auto space-y-8">
         
-        {/* Back Link */}
+      
         <Link href="/studios" className="inline-flex items-center gap-2 text-sm font-bold text-amber-500 hover:underline">
           <ArrowLeft className="w-4 h-4" />
           <span>Back to Explore</span>
         </Link>
 
-        {/* Main Grid Layout */}
+        
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           
-          {/* Left Column */}
+          
           <div className="lg:col-span-2 space-y-6">
             <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
               <span className="px-3.5 py-1.5 rounded-full text-xs font-bold bg-amber-100 text-amber-700 dark:bg-amber-950/50 dark:text-amber-400">
@@ -83,7 +83,7 @@ export default async function StudioDetailsPage({ params }: StudioDetailsPagePro
                 </p>
               </div>
 
-              {/* Amenities */}
+              
               <div className="space-y-3 pt-4 border-t border-slate-100 dark:border-slate-800">
                 <h3 className="text-lg font-bold">Equipment & Amenities</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs font-medium text-slate-600 dark:text-slate-300">
@@ -104,7 +104,7 @@ export default async function StudioDetailsPage({ params }: StudioDetailsPagePro
             </div>
           </div>
 
-          {/* Right Column: Booking Card */}
+         
           <div className="lg:col-span-1">
             <div className="sticky top-8 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 shadow-lg space-y-6">
               <div className="flex items-baseline justify-between">
@@ -132,7 +132,7 @@ export default async function StudioDetailsPage({ params }: StudioDetailsPagePro
                 </div>
               </div>
 
-              {/* Client Component Booking Button & Modal */}
+             
               <BookingModal
                 studioId={id}
                 studioTitle={studio.title}

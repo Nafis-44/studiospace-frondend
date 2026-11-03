@@ -60,7 +60,7 @@ export default function StudiosPage() {
       result = result.filter((studio) => studio.category === selectedCategory);
     }
 
-    // Filter by search term
+    
     if (searchTerm) {
       result = result.filter(
         (studio) =>
@@ -98,7 +98,6 @@ export default function StudiosPage() {
           </div>
         </div>
 
-        {/* Category Filter Pills */}
         <div className="flex items-center gap-2 overflow-x-auto pb-2">
           {categories.map((cat) => (
             <button

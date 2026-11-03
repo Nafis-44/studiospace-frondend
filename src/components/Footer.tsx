@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
           
-          {/* Brand Info */}
+          
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 rounded-xl bg-amber-400 flex items-center justify-center text-slate-950 font-black text-xl shadow-lg shadow-amber-400/20">
@@ -23,7 +23,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
+          
           <div className="space-y-4">
             <h4 className="text-white font-bold text-sm uppercase tracking-wider">Navigation</h4>
             <ul className="space-y-2.5 text-xs">
@@ -34,7 +34,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Categories */}
+          
           <div className="space-y-4">
             <h4 className="text-white font-bold text-sm uppercase tracking-wider">Workspaces</h4>
             <ul className="space-y-2.5 text-xs">
@@ -45,7 +45,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Newsletter / Contact */}
+          
           <div className="space-y-4">
             <h4 className="text-white font-bold text-sm uppercase tracking-wider">Stay Updated</h4>
             <p className="text-xs text-slate-400">Get notified about new premier studios and special creator discounts.</p>
@@ -63,7 +63,7 @@ export default function Footer() {
 
         </div>
 
-        {/* Bottom Bar */}
+       
         <div className="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>&copy; {new Date().getFullYear()} StudioSpace Marketplace. All rights reserved.</p>
           <div className="flex gap-6">

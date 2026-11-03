@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import toast, { Toaster } from "react-hot-toast";
 import { PlusCircle, Sparkles, DollarSign, MapPin, Users, Image as ImageIcon } from "lucide-react";
-import { authClient } from "@/lib/auth-client";
 import { gettokenfromclient } from "@/lib/gettokenfromClient";
 
 export default function AddStudioPage() {

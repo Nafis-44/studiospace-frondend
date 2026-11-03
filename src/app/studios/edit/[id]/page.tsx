@@ -11,7 +11,7 @@ function EditStudioContent() {
   const router = useRouter();
   const params = useParams();
   
-  // ID sothikvabe extract kora
+
   const id = params?.id ? (Array.isArray(params.id) ? params.id[0] : params.id) : null;
   
   const [loading, setLoading] = useState(false);
@@ -34,7 +34,6 @@ function EditStudioContent() {
     description: "",
   });
 
-  // Logged-in user session fetch kora
   useEffect(() => {
     const fetchSession = async () => {
       try {
@@ -52,7 +51,7 @@ function EditStudioContent() {
     fetchSession();
   }, []);
 
-  // Studio Data Fetch by ID with Token (Backend verifyApi-er jonno)
+
   useEffect(() => {
     if (!id) return;
 
